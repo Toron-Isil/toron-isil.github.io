@@ -1,25 +1,98 @@
 <!DOCTYPE html>
 <html>
+
     <head>
-       <title>title</title>
-       <style>
-           
-           * {
-               font-family: sans-serif; 
-               box-sizing: border-box;
-               padding: 0;
-               margin: 0;
-           }
-          
-        </style>
+    <title>(¯`·._.· BMB ·._.·´¯)</title>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <meta name="author" content="Bernd Boehm">
+        <meta name="description" content="project - about me">
+
+        <link rel="stylesheet" href="css/style.css">
         
+        <script src="js/myscript.js"></script>
+
     </head>
     
     <body>
-        <p>funktionierts?</p>
-        
+    
+       <nav id="global-nav">
+
+            <div id="burger-icon" onclick="toggleGlobalNav()">
+                <div></div>
+                <div></div>                
+                <div></div>             
+            </div>
+   
+            <ul>
+                <li><a class="homebutton" href="#" onclick="hideGlobalNav()"><img src="ico/home-icon.png"><span class="navtext">HOME</span></a></li>
+                <li><a class="vitabutton" href="vita.html" onclick="hideGlobalNav()"><img src="ico/about-icon.png"><span class="navtext">VITA</span></a></li>   
+                <li><a class="photobutton" href="photo.html" onclick="hideGlobalNav()"><img src="ico/projects-icon.png"><span class="navtext">PHOTO</span></a></li>  
+                <li><a class="contactbutton" href="contact.html" onclick="hideGlobalNav()"><img src="ico/contact-icon.png"><span class="navtext">CONTACT</span></a></li>  
+            </ul>    
+     </nav>
+    
+    
+     <nav id="local">
+        <a href="#top">Welcome </a>
+        <a href="#middle">Thank You </a>
+        <a href="#bottom">Contact </a>
+     </nav>
+     
+    <section id="top">
+           <br>
+            <div>
+            <img id="profile" src="img/its-me-ps-blue.jpg"
+            onMouseOver="MouseRollover(this)" 
+            onMouseOut="MouseOut(this)" >
+            </div>
+            <h1>
+                Hi, it's me.
+            </h1>
+            <br>
+            <p class="hometext">   
+                ... not what you expected 
+            </p>
+    </section>
+      
+    <section id="middle">
+        <br>
+            <h2 class="headline">step by step</h2>
+            <p>
+               every journey begins with a small step 
+            </p>
+            <p>
+                lessson by lesson the steps become savier
+            </p>
+            <p>
+                so I will say "Thank You!", 
+            </p>
+            <p>
+                for open the door and show the way!
+            </p>
+
+    </section>
+          
+    <section id="bottom">
+            
+             <div>
+            <img id="profile2" src="img/me_800x800.jpg">
+            </div>
+            <br>
+            <h2 class="headline">contact</h2>
+            
+            <p>
+               Bernd Boehm 
+            </p>
+            <p>
+                Weichselstraße 61
+            </p>   
+            <p>
+                12043 Berlin
+            </p>
+    </section>
+     
     </body>
-    
-    
-    
+
 </html>
