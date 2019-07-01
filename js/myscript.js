@@ -1,5 +1,5 @@
 var minHeight = 38;
-var maxHeight = 193;      
+var maxHeight = 195;      
         
         
 function toggleGlobalNav() {
@@ -16,6 +16,7 @@ function hideGlobalNav() {
 }        
         
 
+		
 function MouseRollover() {
         document.getElementById("profile").src= "img/its-me-ps-yel.jpg";
     }
@@ -25,4 +26,11 @@ function MouseOut() {
 
 // function onmouseover() {
 //     document.getElementById("profile").src="img/its-me-ps-yel.jpg";
-//}
+//}	
+	
+function MouseRolloverSchloss() {
+        document.getElementById("draw").src= "img/schloss-goart02.jpg";
+    }
+function MouseOutSchloss() {
+        document.getElementById("draw").src= "img/schloss.jpg";
+    }

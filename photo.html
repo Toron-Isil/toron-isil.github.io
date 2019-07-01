@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>(¯`·._.· BMB ·._.·´¯)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <meta name="author" content="Bernd Boehm">
+    <meta name="description" content="project - about me">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <script src="js/myscript.js"></script>
+    <script src="js/gallery-diashow.js"></script>
+
+</head>
+
+<body onload="diainterval = setInterval('diashow()',2000);">
+
+    <nav id="global-nav">
+
+        <div id="burger-icon" onclick="toggleGlobalNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <ul>
+            <li>
+                <a class="homebutton" href="index.html" onclick="hideGlobalNav()"><img src="ico/home-icon.png"><span class="navtext">HOME</span></a>
+            </li>
+            <!-- noch keine Vita-Seite vorhanden
+                <li>
+                <a class="vitabutton" href="vita.html" onclick="hideGlobalNav()"><img src="ico/about-icon.png"><span class="navtext">VITA</span></a>
+            </li>  -->
+            <li>
+                <a class="photobutton" href="#" onclick="hideGlobalNav()"><img src="ico/projects-icon.png"><span class="navtext">PHOTO</span></a>
+            </li>
+            <li>
+                <a class="contactbutton" href="contact.html" onclick="hideGlobalNav()"><img src="ico/contact-icon.png"><span class="navtext">CONTACT</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav id="local">
+        <a href="#top-photo"> ^ top ^ </a>
+        <a href="#middle-photo">About </a>
+        <a href="#bottom-photo">Diashow </a>
+    </nav>
+
+    <section id="top-photo">
+        <br>
+        <h1 class="headline">Photographie</h1>
+
+    </section>
+
+    <section id="middle-photo">
+        <br>
+        <h2 class="headline">About Photographie</h2>
+        <h3>
+            I like to take pictures
+        </h3>
+        <p>
+            My dad gave me my first camera (still with rollfilm), from that moment on I took the camera with me on all joint ventures and took pictures diligently.
+        </p>
+        <p>
+            In the Year 2010 I began to use a SLR Digial Camera. The time of the rollfilm was over. Almost endless photosessions, from 36 pictures to> 1.000 and the possibility to see on the display whether the photo was successfully taken.
+        </p>
+        <h3>
+            Combining digital drawing and editing photos.
+        </h3>
+        <p>
+            Of course, I have previously edited photos on my computer, but they were only downloaded from the Internet or transmitted by scanner. Now with the digital camera, the world was open for editing - calibrating, retouching, rescaling, combining ... etc.
+            of all the pictures. <br><br>
+        </p>
+
+    </section>
+
+    <section id="bottom-photo">
+        <br>
+        <div id="galerie-frame" align="center">
+            <br>
+            <br>
+            <h2>Photographie - Diashow</h2>
+            <br>
+            <div id="diacontrol">
+                <input type="button" value=" << " onclick="
+                        showlast();
+                        " />
+                <input type="button" value="Pause" onclick="pause();" />
+
+                <input type="button" value="Play" onclick="play();" />
+
+                <input type="button" value=" >> " onclick="
+                        shownext();            " />
+            </div>
+            <br>
+            <img src="gallery/sanduhr.jpg" name="display" id="display" />
+        </div>
+
+    </section>
+
+</body>
+
+</html>
