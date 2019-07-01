@@ -84,7 +84,7 @@ p,
 
 h2.headline {
     font-size: 2em;
-    margin-top: 7vh;
+    margin-top: 6vh;
 }
 
 #top h1 {
@@ -267,27 +267,27 @@ h1 {
 
 #middle-photo h3,
 #middle-photo h2 {
-    margin-left: 25vw;
-    margin-right: 5vw;
+    /* margin-left: 25vw; */
+    /* margin-right: 5vw; */
     padding-left: 2vw;
     padding-right: 1vw;
     padding-top: 0.5em;
     padding-bottom: 0.1em;
     color: rgba(20, 20, 50, 0.9);
     text-decoration: none;
-    background-color: rgba(220, 220, 220, 0.7)
+    background-color: rgba(230, 230, 240, 0.8)
 }
 
 #middle-photo p {
-    margin-left: 25vw;
-    margin-right: 5vw;
+    /* margin-left: 25vw; */
+    /* margin-right: 5vw; */
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 0.2em;
     padding-top: 0.2em;
     color: rgba(20, 20, 50, 0.9);
     text-decoration: none;
-    background-color: rgba(220, 220, 220, 0.7)
+    background-color: rgba(230, 230, 240, 0.8)
 }
 
 
@@ -474,7 +474,7 @@ background-pictures
 }
 
 #middle-photo {
-    background-image: url(../img/lichtpunkt.jpg);
+    background-image: url(../img/close-up.jpg);
     background-size: cover;
     background-position: center;
 }
